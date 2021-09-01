@@ -18,13 +18,6 @@ class ToysController < ApplicationController
     toy = find_toy
     toy.update(toy_params)
     render json: toy, status: 202
-    # if toy
-    #   toy.update(toy_params)
-    #   render json: toy, status: 202
-    # else
-    #   render json: { error: "Toy not found" }, status: :not_found
-    # end
-  
   end
 
   def destroy
